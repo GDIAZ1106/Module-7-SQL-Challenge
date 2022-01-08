@@ -13,6 +13,8 @@ The purpose of the analysis is to create a set of data based with a logical Enti
 We have designed the following ERD coming from the tables that Pewlett Hackard have:
 <p align = "center">
   <img src="https://github.com/GDIAZ1106/Module-7-SQL-Challenge/blob/main/Resources/ERD_Tables.png" width="800" height="400" />
+ 
+ Click [here](https://github.com/GDIAZ1106/Module-7-SQL-Challenge/blob/main/Exported%20CSV/unique_titles.csv) to acces the detailed database of employees in retirement conditions.
 
 # Results: 
 
@@ -21,9 +23,12 @@ We have designed the following ERD coming from the tables that Pewlett Hackard h
 - Pewlett Hackard is facing in the next year the retirement of 90.398 employees which represent 30,13% of the total of employees and is spread among different roles through out the organization as follows: 
 <p align = "center">
   <img src="https://github.com/GDIAZ1106/Module-7-SQL-Challenge/blob/main/Resources/Open_Positions_Per_Title.png" width="200" height="200" />
+  
+  
 
-- Pewlett Hackard is decided to start a mentoring program for those employees born in 1965. 
-
+- Pewlett Hackard is decided to start a mentoring program for those employees born in 1965 to replace the people leaving. The total amount of the employees that fulfill that conditions accounts for 1.549 employees and they are spread on the following different functions:
+ <p align = "center">
+  <img src="https://github.com/GDIAZ1106/Module-7-SQL-Challenge/blob/main/Resources/Employees_to_mentor_by_title.png" width="200" height="200" />
 
 
 # Summary: 
