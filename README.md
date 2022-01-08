@@ -24,7 +24,7 @@ We have designed the following ERD coming from the tables that Pewlett Hackard h
 <p align = "center">
   <img src="https://github.com/GDIAZ1106/Module-7-SQL-Challenge/blob/main/Resources/Open_Positions_Per_Title.png" width="200" height="200" />
   
-  
+Click [here](https://github.com/GDIAZ1106/Module-7-SQL-Challenge/blob/main/Exported%20CSV/unique_titles.csv) to access to the full database of employees in retirement situation. 
 
 - Pewlett Hackard is decided to start a mentoring program for those employees born in 1965 to replace the people leaving. The total amount of the employees that fulfill that conditions accounts for 1.549 employees and they are spread on the following different functions:
  <p align = "center">
