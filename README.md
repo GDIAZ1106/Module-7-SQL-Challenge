@@ -11,15 +11,18 @@ Pewlett Hackard is a sucessful company that is facing a generational change insd
 The purpose of the analysis is to create a set of data based with a logical Entity Relational Diagram that could attend several request from the top managment of the organization including, but not limited to, a list of the employess that are in retirement age and a list of probable sucessors that could be mentored to replace them.
 
 We have designed the following ERD coming from the tables that Pewlett Hackard have:
-
-![Future Open Positions to replace](Resources/ERD_Tables.PNG)
+<p align = "center">
+  <img src="https://github.com/GDIAZ1106/Module-7-SQL-Challenge/blob/main/Resources/ERD_Tables.png" width="800" height="400" />
 
 # Results: 
 
-Provide a bulleted list with four major points from the two analysis deliverables. Use images as support where needed.
+  According to our analysis this are the most important topics to work in:
+  
+- Pewlett Hackard is facing in the next year the retirement of 90.398 employees which represent 30,13% of the total of employees and is spread among different roles through out the organization as follows: 
+<p align = "center">
+  <img src="https://github.com/GDIAZ1106/Module-7-SQL-Challenge/blob/main/Resources/Open_Positions_Per_Title.png" width="200" height="200" />
 
-<img src="https://github.com/GDIAZ1106/Module-7-SQL-Challenge/blob/main/Resources/Open_Positions_Per_Title.png" width="50" height="50" />
-
+- Pewlett Hackard is decided to start a mentoring program for those employees born in 1965. 
 
 
 
