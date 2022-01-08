@@ -18,7 +18,7 @@ We have designed the following ERD coming from the tables that Pewlett Hackard h
 
 Provide a bulleted list with four major points from the two analysis deliverables. Use images as support where needed.
 
-![Future Open Positions to replace](Resources/Open_Positions_Per_Title.PNG)
+https://github.com/GDIAZ1106/Module-7-SQL-Challenge/blob/main/Resources/Open_Positions_Per_Title.png
 
 
 
