@@ -1,0 +1,21 @@
+--- Code 2 - Agging of the staff
+SELECT tea.emp_no, 
+	tea.first_name, 
+	tea.last_name,
+	tea.birth_date,
+	tea.from_date, 
+	tea.to_date,
+	(2016-EXTRACT(YEAR FROM tea.birth_date))AS age
+INTO agging_employess
+FROM total_employees_active as tea
+
+SELECT COUNT (ae.emp_no) 
+FROM agging_employess as ae
+
+-- Count by age
+SELECT COUNT (ae.age) AS quantity_staff,
+	ae.age
+INTO staff_agging
+FROM agging_employess AS ae
+GROUP BY ae.age
+ORDER BY age DESC;

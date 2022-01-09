@@ -1,0 +1,12 @@
+--- Code 2: Calculating Mentoring employees positions
+SELECT COUNT (em.title), em.title
+INTO mentorship_titles
+FROM employees_mentorship AS em
+INNER JOIN retiring_titles
+GROUP BY em.title
+ORDER BY Count DESC;
+
+SELECT * FROM employees_mentorship
+
+SELECT COUNT(em.emp_no)
+FROM employees_mentorship AS em;
