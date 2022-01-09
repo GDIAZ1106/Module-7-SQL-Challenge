@@ -77,11 +77,60 @@ INTO employees_mentorship
 FROM employees_complete AS ec
 INNER JOIN titles AS ti
    on (ec.emp_no = ti.emp_no)
-WHERE ec.to_date='9999-01-01'
+WHERE ti.to_date='9999-01-01'
 ORDER BY ec.emp_no;
 
 -- Check if it is ok
+SELECT COUNT (em.emp_no)
+ FROM employees_mentorship as em;
+ 
 SELECT * FROM employees_mentorship
+ 
+-- Deliverable 3: Additional codes that will help on the analysis
+
+--- Code 1 - Agging of the staff
+SELECT tea.emp_no, 
+	tea.first_name, 
+	tea.last_name,
+	tea.birth_date,
+	tea.from_date, 
+	tea.to_date,
+	(2016-EXTRACT(YEAR FROM tea.birth_date))AS age
+INTO agging_employess
+FROM total_employees_active as tea
+
+SELECT COUNT (ae.emp_no) 
+FROM agging_employess as ae
+
+-- Count by age
+SELECT COUNT (ae.age) AS quantity_staff,
+	ae.age
+INTO staff_agging
+FROM agging_employess AS ae
+GROUP BY ae.age
+ORDER BY age DESC;
+
+-- Check OK
+SELECT * FROM staff_agging
+ 
+SELECT COUNT (emp_no)
+FROM total_employees_active
+
+--- Calculating Mentoring employees positions
+SELECT COUNT (em.title), em.title
+INTO mentorship_titles
+FROM employees_mentorship AS em
+INNER JOIN retiring_titles
+GROUP BY em.title
+ORDER BY Count DESC;
+
+
+-- Check ok
+SELECT * FROM employees_mentorship
+
+SELECT COUNT(em.emp_no)
+FROM employees_mentorship AS em;
+
 
 
 -- Analysis performed outside from the requirements of the Challenge
@@ -94,7 +143,8 @@ FROM retiring_titles;
 
 SELECT DISTINCT ON (e.emp_no) e.emp_no, 
 	e.first_name, 
-	e.last_name, 
+	e.last_name,
+	e.birth_date,
 	tit.title, 
 	tit.from_date, 
 	tit.to_date
@@ -107,18 +157,7 @@ WHERE tit.to_date='9999-01-01';
 SELECT COUNT(e.emp_no)
 FROM employees AS e;
 
---- Calculating Mentoring employees positions
-SELECT COUNT (em.title), em.title
-INTO mentorship_titles
-FROM employees_mentorship AS em
-INNER JOIN retiring_titles
-GROUP BY em.title
-ORDER BY Count DESC;
 
-SELECT * FROM employees_mentorship
-
-SELECT COUNT(em.emp_no)
-FROM employees_mentorship AS em;
 
 -- Calculate the split among titles for the employees to be mentored
 SELECT COUNT (em.title), em.title

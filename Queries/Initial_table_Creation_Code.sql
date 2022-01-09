@@ -16,6 +16,7 @@ CREATE TABLE employees (
      PRIMARY KEY (emp_no)
 );
 
+
 CREATE TABLE dept_manager (
 dept_no VARCHAR(4) NOT NULL,
     emp_no INT NOT NULL,
@@ -188,7 +189,7 @@ WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
 	AND (e.hire_date BETWEEN '1985-01-01' AND '1988-12-31')
     AND (de.to_date = '9999-01-01');
 
--- List 2 of managers per department
+-- List 2: managers per department
 SELECT  dm.dept_no,
         d.dept_name,
         dm.emp_no,
@@ -203,7 +204,7 @@ FROM dept_manager AS dm
     INNER JOIN current_emp AS ce
         ON (dm.emp_no = ce.emp_no);
 
--- List 3 of managers per department
+-- List 3: managers per department
 SELECT ce.emp_no,
 ce.first_name,
 ce.last_name,
