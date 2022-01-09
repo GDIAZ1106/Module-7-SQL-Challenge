@@ -40,7 +40,7 @@ We have designed the following ERD coming from the tables that Pewlett Hackard h
 Pewlett Hackard is facing a very challenging situation. The roles that have to be replaced account for 90.308 positions in the next 5 years, which shows a pretty old staff. 
 There are seven different roles to cover which is not something easy to cover. The mentors are not enough and the qualifiers to select them should be expanded. 
 
-It would be important to have the mentors analyzed by current role so PH could check that all the necesary roles are being covered by the selected mentors. This could be done by using the following [code](https://github.com/GDIAZ1106/Module-7-SQL-Challenge/blob/main/Resources/Code%201.txt) which is ready to implement on the Query submitted. 
+It would be important to have the mentors analyzed by current role so PH could check that all the necesary roles are being covered by the selected mentors. This could be done by using the following [code](https://github.com/GDIAZ1106/Module-7-SQL-Challenge/blob/main/Resources/Code%201.txt) which is ready to implement on the Query submitted.  
    
 It is also very important for PH to have an aging of the staff contains the amount of employees of each year they have. That could be a good proxy of the people retiring in each year. The code to perform that task is on this [link](https://github.com/GDIAZ1106/Module-7-SQL-Challenge/blob/main/Resources/Code%202.txt) and is ready to implement on the Query submitted. 
    
