@@ -1,4 +1,4 @@
---- Code 2 - Agging of the staff
+--- Code 2 - Aging of the staff
 SELECT tea.emp_no, 
 	tea.first_name, 
 	tea.last_name,
